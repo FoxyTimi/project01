@@ -56,11 +56,14 @@ orders.map((o) =>{
     output +=`
     <div class="order">
         <p>${o.id}</p>
-        <p>Pizza: ${o.pizza}</p>
+        <h3>${o.pizza}</h3>
+        <hr>
         <p>Extra: ${o.extra}</p>
         <p>Ital: ${o.ital}</p>
-        <p>Ár: ${o.ar} Ft</p>
+        <h4>Ár: ${o.ar} Ft</h4>
+        <div>
         <img src="${o.kep}">
+        </div>
     </div>
     `;
 })
